@@ -15,6 +15,9 @@ public class Refactor {
         public Set<String> findLongTracks(List<Album> albums);
     }
 
+    /**
+     * 找出长度大于1分钟的曲目
+     */
     public static class Step0 implements LongTrackFinder {
         // BEGIN findLongTracks_0
         public Set<String> findLongTracks(List<Album> albums) {
@@ -32,6 +35,9 @@ public class Refactor {
 // END findLongTracks_0
     }
 
+    /**
+     * 重构的第一步：找出长度大于1分钟的曲目
+     */
     public static class Step1 implements LongTrackFinder {
         // BEGIN findLongTracks_1
         public Set<String> findLongTracks(List<Album> albums) {
@@ -51,6 +57,9 @@ public class Refactor {
 // END findLongTracks_1
     }
 
+    /**
+     * 重构的第二步：找出长度大于1分钟的曲目
+     */
     public static class Step2 implements LongTrackFinder {
         // BEGIN findLongTracks_2
         public Set<String> findLongTracks(List<Album> albums) {
@@ -67,6 +76,9 @@ public class Refactor {
 // END findLongTracks_2
     }
 
+    /**
+     * 重构的第三步：找出长度大于1分钟的曲目
+     */
     public static class Step3 implements LongTrackFinder {
         // BEGIN findLongTracks_3
         public Set<String> findLongTracks(List<Album> albums) {
@@ -83,6 +95,9 @@ public class Refactor {
 // END findLongTracks_3
     }
 
+    /**
+     * 重构的第四步：找出长度大于1分钟的曲目
+     */
     public static class Step4 implements LongTrackFinder {
         // BEGIN findLongTracks_4
         public Set<String> findLongTracks(List<Album> albums) {

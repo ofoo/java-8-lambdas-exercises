@@ -27,6 +27,11 @@ public class Decisions {
         // END origins_of_bands_meth_imp
     }
 
+    /**
+     * 找出某张专辑上所有乐队的国籍
+     * @param album
+     * @return
+     */
     public Set<String> originsOfBands(Album album) {
         // BEGIN origins_of_bands
         Set<String> origins = album.getMusicians()
@@ -37,6 +42,13 @@ public class Decisions {
         return origins;
     }
 
+    /**
+     * 用户也可以选择每一步强制对函数求值，而不是将所有的方法调用链接在一起，但是，最好不要如此操作。
+     *
+     * 误用Stream的例子
+     * @param album
+     * @return
+     */
     public Set<String> originsOfBandsMisuse(Album album) {
         // BEGIN misuse
         List<Artist> musicians = album.getMusicians()
