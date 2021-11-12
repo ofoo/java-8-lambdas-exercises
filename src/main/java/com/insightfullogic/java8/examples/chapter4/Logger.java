@@ -16,12 +16,15 @@ public class Logger {
         }
     }
 
+    /**
+     * 例4-1 使用isDebugEnabled方法降低日志性能开销
+     */
     public void example() {
         // BEGIN debug_optimised
-Logger logger = new Logger();
-if (logger.isDebugEnabled()) {
-    logger.debug("Look at this: " + expensiveOperation());
-}
+        Logger logger = new Logger();
+        if (logger.isDebugEnabled()) {
+            logger.debug("Look at this: " + expensiveOperation());
+        }
         // END debug_optimised
     }
 
@@ -29,6 +32,11 @@ if (logger.isDebugEnabled()) {
         return "";
     }
 
+    /**
+     * 例4-3 启用Lambda表达式实现的日志记录器
+     *
+     * @param message
+     */
     // BEGIN debug_lambda
     public void debug(Supplier<String> message) {
         if (isDebugEnabled()) {
@@ -37,10 +45,13 @@ if (logger.isDebugEnabled()) {
     }
     // END debug_lambda
 
+    /**
+     * 例4-2 使用Lambda表达式简化日志代码
+     */
     public void exampleWithLambda() {
         // BEGIN debug_optimised_lambda
-Logger logger = new Logger();
-logger.debug(() -> "Look at this: " + expensiveOperation());
+        Logger logger = new Logger();
+        logger.debug(() -> "Look at this: " + expensiveOperation());
         // END debug_optimised_lambda
     }
 
