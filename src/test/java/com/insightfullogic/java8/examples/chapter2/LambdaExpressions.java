@@ -16,6 +16,9 @@ import java.util.function.Predicate;
  */
 public class LambdaExpressions {
 
+    /**
+     * 例2-1 使用匿名内部类将行为和按钮单击进行关联
+     */
     public void first_lambda_1() {
         JButton button = new JButton();
         // BEGIN lambda_button_class
@@ -27,6 +30,9 @@ public class LambdaExpressions {
         // END lambda_button_class
     }
 
+    /**
+     * 例2-2 使用Lambda表达式将行为和按钮单击进行关联
+     */
     public void first_lambda_2() {
         JButton button = new JButton();
         // BEGIN lambda_button_lambda
@@ -43,6 +49,9 @@ public class LambdaExpressions {
         // END lambda_button_lambda2
     }
 
+    /**
+     * 例2-3 编写Lambda表达式的不同形式
+     */
     public void allLambdaForms() {
         // BEGIN all_lambda_forms
         Runnable noArguments = () -> System.out.println("Hello World"); // <1>
@@ -60,6 +69,9 @@ public class LambdaExpressions {
         // END all_lambda_forms
     }
 
+    /**
+     * 例2-5 匿名内部类中使用final局部变量
+     */
     public void first_lambda_5() {
         JButton button = new JButton();
         // BEGIN variable_capture1
@@ -72,6 +84,9 @@ public class LambdaExpressions {
         // END variable_capture1
     }
 
+    /**
+     * 例2-6 Lambda表达式中引用既成事实上的final变量
+     */
     public void first_lambda_6() {
         JButton button = new JButton();
         // BEGIN variable_capture2
@@ -87,6 +102,9 @@ public class LambdaExpressions {
         // END diamond_inference
     }
 
+    /**
+     * 例2-10 使用菱形操作符，根据方法签名做推断
+     */
     public void diamondInferenceMethod() {
         // BEGIN diamond_inference_method
         useHashmap(new HashMap<>());
@@ -108,12 +126,18 @@ public class LambdaExpressions {
         // END bifunction_declaration
     }
 
+    /**
+     * 例2-11 类型推断
+     */
     public void typeInferenceExamples() {
         // BEGIN type_inference_examples
         Predicate<Integer> atLeast5 = x -> x > 5;
         // END type_inference_examples
     }
 
+    /**
+     * 例2-13 略显复杂的类型推断
+     */
     public void typeInferenceExamples2() {
         // BEGIN type_inference_examples2
         BinaryOperator<Long> addLongs = (x, y) -> x + y;

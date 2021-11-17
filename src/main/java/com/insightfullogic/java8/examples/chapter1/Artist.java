@@ -15,15 +15,23 @@ import static java.util.stream.Collectors.toList;
 
 /**
  * Domain class for a popular music artist.
- * 
+ * 创作音乐的个人或团队
  * @author Richard Warburton
  */
 public final class Artist {
-    
+    /**
+     * 艺术家的名字（例如“甲壳虫乐队”）
+     */
     private String name;
+    /**
+     * 乐队成员（例如“约翰·列侬”），该字段可为空
+     */
     private List<Artist> members;
+    /**
+     * 国籍
+     */
     private String nationality;
-    
+
     public Artist(String name, String nationality) {
         this(name, Collections.emptyList(), nationality);
     }

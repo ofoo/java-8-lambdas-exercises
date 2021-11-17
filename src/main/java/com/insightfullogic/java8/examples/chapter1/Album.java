@@ -14,13 +14,22 @@ import static java.util.Collections.unmodifiableList;
 import static java.util.stream.Collectors.toList;
 
 /**
- *
+ * 专辑，由若干曲目组成
  * @author richard
  */
 public final class Album implements Performance {
-    
+
+    /**
+     * 专辑名（例如《左轮手枪》）
+     */
     private String name;
+    /**
+     * 专辑上所有曲目的列表
+     */
     private List<Track> tracks;
+    /**
+     * 参与创作本专辑的艺术家列表
+     */
     private List<Artist> musicians;
 
     public Album(String name, List<Track> tracks, List<Artist> musicians) {

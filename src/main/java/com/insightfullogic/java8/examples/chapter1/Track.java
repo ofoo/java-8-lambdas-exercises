@@ -6,10 +6,14 @@
 package com.insightfullogic.java8.examples.chapter1;
 
 /**
+ * 专辑中的一支曲目
  * @author richard
  */
 public final class Track {
-    
+
+    /**
+     * 曲目名称（例如“黄色潜水艇”）
+     */
     private final String name;
     private final int length;
 

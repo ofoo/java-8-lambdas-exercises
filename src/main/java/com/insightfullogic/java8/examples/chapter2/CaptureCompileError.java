@@ -6,6 +6,9 @@ public class CaptureCompileError {
 
     private JButton button;
 
+    /**
+     * 例2-7 未使用既成事实上的final变量，导致无法通过编译
+     */
     public void error() {
         String name = getUserName();
         name = formatUserName(name);
