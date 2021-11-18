@@ -29,6 +29,9 @@ public class HigherOrderFunctionExamplesTest {
         // END collect_to_list_1
     }
 
+    /**
+     * 例3-9 使用map操作将字符串转换为大写形式
+     */
     @Test
     public void mapToUpperCase() {
         // BEGIN map_to_uppercase
@@ -40,6 +43,9 @@ public class HigherOrderFunctionExamplesTest {
         // END map_to_uppercase
     }
 
+    /**
+     * 例3-8 使用for循环将字符串转换为大写
+     */
     @Test
     public void forToUpperCase() {
         // BEGIN for_to_uppercase
