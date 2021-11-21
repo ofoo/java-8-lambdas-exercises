@@ -33,7 +33,11 @@ public class Iteration {
         return count;
     }
 
-
+    /**
+     * 例3-3 使用内部迭代计算来自伦敦的艺术家人数
+     * @param allArtists
+     * @return
+     */
     public long internalCountArtistsFromLondon(List<Artist> allArtists) {
         // BEGIN internal_count_londoners
         long count = allArtists.stream()
@@ -43,6 +47,10 @@ public class Iteration {
         return count;
     }
 
+    /**
+     * 例3-4 只过滤，不计数
+     * @param allArtists
+     */
     public void filterArtistsFromLondon(List<Artist> allArtists) {
         // BEGIN filter_londoners
         allArtists.stream()
@@ -50,6 +58,10 @@ public class Iteration {
         // END filter_londoners
     }
 
+    /**
+     * 例3-5 由于使用了惰性求值，没有输出艺术家的名字
+     * @param allArtists
+     */
     public void filterArtistsFromLondonPrinted(List<Artist> allArtists) {
         // BEGIN filter_londoners_printed
         allArtists.stream()
@@ -60,6 +72,11 @@ public class Iteration {
         // END filter_londoners_printed
     }
 
+    /**
+     * 例3-6 输出艺术家的名字
+     * @param allArtists
+     * @return
+     */
     public long internalCountArtistsFromLondonPrinted(List<Artist> allArtists) {
         // BEGIN internal_count_londoners_printed
         long count = allArtists.stream()
