@@ -29,6 +29,9 @@ public class HigherOrderFunctionExamplesTest {
         // END collect_to_list_1
     }
 
+    /**
+     * 例3-9 使用map操作将字符串转换为大写形式
+     */
     @Test
     public void mapToUpperCase() {
         // BEGIN map_to_uppercase
@@ -53,6 +56,9 @@ public class HigherOrderFunctionExamplesTest {
         // END for_to_uppercase
     }
 
+    /**
+     * 例3-14 使用for循环查找最短曲目
+     */
     @Test
     public void imperativeMaxLength() {
 // BEGIN imperativeMaxLength
@@ -71,6 +77,9 @@ public class HigherOrderFunctionExamplesTest {
 // END imperativeMaxLength
     }
 
+    /**
+     * 例3-13 使用Stream查找最短曲目
+     */
     @Test
     public void streamsMaxLength() {
 // BEGIN streamsMaxLength
@@ -99,6 +108,9 @@ public class HigherOrderFunctionExamplesTest {
 // END streamsAnyMatch
     }
 
+    /**
+     *
+     */
     @Test
     public void imperativeAnyMatch() {
 // BEGIN imperativeAnyMatch
@@ -152,6 +164,9 @@ public class HigherOrderFunctionExamplesTest {
         // END count_using_reduce_for
     }
 
+    /**
+     * 例3-11 函数式风格
+     */
     @Test
     public void functionalStringsWithNumbers() {
         // BEGIN strings_numbers_filter
@@ -164,6 +179,9 @@ public class HigherOrderFunctionExamplesTest {
         // END strings_numbers_filter
     }
 
+    /**
+     * 例3-10 使用循环遍历列表，使用条件语句做判断
+     */
     @Test
     public void imperativeStringsWithNumbers() {
         // BEGIN strings_numbers_for
@@ -178,6 +196,9 @@ public class HigherOrderFunctionExamplesTest {
         // END strings_numbers_for
     }
 
+    /**
+     * 例3-12 包含多个列表的Stream
+     */
     @Test
     public void flatMapCharacters() {
         // BEGIN flatmap_characters
